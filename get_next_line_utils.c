@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdias-ju <jdias-ju@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: jdias-ju <jdias-ju@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 16:58:11 by jdias-ju          #+#    #+#             */
-/*   Updated: 2025/12/23 16:58:21 by jdias-ju         ###   ########.ch       */
+/*   Created: 2025/12/24 14:49:27 by jdias-ju          #+#    #+#             */
+/*   Updated: 2025/12/24 14:49:31 by jdias-ju         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	}
 	if (!s2)
 		return (NULL);
-	res = malloc(ft_strlen(s1) + ft_strlen(s2) + 1 * sizeof(char));
+	res = malloc((ft_strlen(s1) + ft_strlen(s2) + 1 )* sizeof(char));
 	if (!res)
 		return (NULL);
 	i = 0;
@@ -70,7 +70,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	while (s2[j])
 		res[i++] = s2[j++];
 	res[i] = '\0';
-	free(s1); // because we allocated for the first turn, AND for the nexts turns
+	free(s1);
 	return (res);
 }
 
@@ -83,9 +83,9 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 		return (NULL);
 	if (start >= ft_strlen(s))
 		return (ft_strjoin(NULL, ""));
-	if (len > ft_strlen(s + start)) // why this? which cases it can impact?
+	if (len > ft_strlen(s + start))
 		len = ft_strlen(s + start);
-	sub = malloc(len + 1 * sizeof(char));
+	sub = malloc((len + 1 ) * sizeof(char));
 	if (!sub)
 		return (NULL);
 	i = 0;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdias-ju <jdias-ju@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: jdias-ju <jdias-ju@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 13:37:43 by jdias-ju          #+#    #+#             */
-/*   Updated: 2025/12/23 13:39:56 by jdias-ju         ###   ########.ch       */
+/*   Created: 2025/12/24 11:10:51 by jdias-ju          #+#    #+#             */
+/*   Updated: 2025/12/24 11:10:51 by jdias-ju         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int main(void)
 		if (line == NULL)
 			break ;
 		count++;
-		printf("[%d]: %s\n", count, line);
+		printf("[%d]: %s", count, line);
 		free(line);
 		line = NULL;
 	}

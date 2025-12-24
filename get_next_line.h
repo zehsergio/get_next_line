@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdias-ju <jdias-ju@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: jdias-ju <jdias-ju@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 14:56:08 by jdias-ju          #+#    #+#             */
-/*   Updated: 2025/12/23 14:57:49 by jdias-ju         ###   ########.ch       */
+/*   Created: 2025/12/24 14:50:02 by jdias-ju          #+#    #+#             */
+/*   Updated: 2025/12/24 14:50:02 by jdias-ju         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 #ifndef BUFFER_SIZE
-# define BUFFER_SIZE 3
+# define BUFFER_SIZE 10000
 #endif
 
 # include <stdio.h>
