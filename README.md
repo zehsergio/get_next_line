@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by <jdias-ju>.*
+*This project has been created as part of the 42 curriculum by jdias-ju*
 
 # get_next_line
 
